@@ -88,6 +88,7 @@ with open(result_3 + "/css/tokens.css") as file:
         is_block_themes_open = False
 
 with open("output.css", "w") as f:
+    f.write(locals.copyright)
     for c in colors:
         f.write(c)
     for c in themes:
